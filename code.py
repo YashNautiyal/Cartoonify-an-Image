@@ -14,7 +14,6 @@ def read_file(filename):
 
 
 
-
 filename="enter relative name/path of image"
 img=read_file(filename)
 
@@ -32,16 +31,11 @@ def edge_mask(img, line_size, blur_value):
      
 
 
-
-
 line_size, blur_value = 7,7
 edges=edge_mask(img, line_size, blur_value)
 plt.imshow(edges, cmap="gray")
 # plt.imshow(edges, cmap="binary")
 plt.show()
-
-
-
 
 
 
@@ -62,12 +56,9 @@ def color_quantization(img,k):
 
 
 
-
 img=color_quantization(img,k=9)
 plt.imshow(img)
 plt.show()
-
-
 
 
 
@@ -76,9 +67,6 @@ plt.show()
 blurred=cv2.bilateralFilter(img, d=3,sigmaColor=200,sigmaSpace=200)
 plt.imshow(blurred)
 plt.show()
-
-
-
 
 
 
@@ -94,9 +82,6 @@ def cartoon():
     plt.imshow(original_image)
     plt.title("Original Image")
     plt.show()
-
-
-
 
 
 cartoon()
